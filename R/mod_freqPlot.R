@@ -29,7 +29,15 @@ mod_freqPlot_ui <- function(id){
 mod_freqPlot_server <- function(id){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
-
+    output$abundance = renderPlot({
+      if(input$peptide == ""){
+        NULL
+      } else{
+        input$peptide %>%
+          CentralDogma::plotFrequencies() +
+          ggplot2::theme(legend.position = "none")
+      }
+    })
   })
 }
 
