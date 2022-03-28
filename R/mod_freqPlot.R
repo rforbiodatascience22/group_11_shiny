@@ -16,6 +16,9 @@ mod_freqPlot_ui <- function(id){
       width = 300,
       height = 100,
       placeholder = "Insert peptide sequence"
+    ),
+    plotOutput(
+      outputId = ns("abundance")
     )
   )
 }
