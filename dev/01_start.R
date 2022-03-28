@@ -19,25 +19,26 @@
 ## to change the name in the app_sys() function in app_config.R /!\
 ##
 golem::fill_desc(
-  pkg_name = "myshinyapp", # The Name of the package containing the App
-  pkg_title = "PKG_TITLE", # The Title of the package containing the App
-  pkg_description = "PKG_DESC.", # The Description of the package containing the App
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST", # Your Last Name
-  author_email = "AUTHOR@MAIL.COM", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional)
-)
+  pkg_name = "centralDogma", # The Name of the package containing the App
+  pkg_title = "centralDogma", # The Title of the package containing the App
+  pkg_description = "This app performs the basic functions of the central dogma of molecular biology", # The Description of the package containing the App
+  author_first_name = "Álvaro", # Your First Name
+  author_last_name = "León", # Your Last Name
+  author_email = "alvaroguleon@gmail.com", # Your Email
+  repo_url = "https://github.com/rforbiodatascience22/group_11_shiny" # The URL of the GitHub Repo
+  )
+
 
 ## Set {golem} options ----
 golem::set_golem_options()
 
 ## Create Common Files ----
 ## See ?usethis for more information
-usethis::use_mit_license("Golem User") # You can set another license here
+usethis::use_mit_license("alvaroguleon") # You can set another license here
 usethis::use_readme_rmd(open = FALSE)
 # Note that `contact` is required since usethis version 2.1.5
 # If your {usethis} version is older, you can remove that param
-usethis::use_code_of_conduct(contact = "Golem User")
+usethis::use_code_of_conduct(contact = "alvaroguleon")
 usethis::use_lifecycle_badge("Experimental")
 usethis::use_news_md(open = FALSE)
 
