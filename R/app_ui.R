@@ -13,10 +13,9 @@ app_ui <- function(request) {
       h1("centralDogma"),
       tabsetPanel(
         tabPanel(title = "panel1",
-                 "module1"),
+                 mod_DNAtoPeptide_ui("DNAtoPeptide_1")),
         tabPanel(title = "Plot",
-                 mod_freqPlot_ui("freqPlot_1")),
-      )
+                 mod_freqPlot_ui("freqPlot_1")))
     )
   )
 }
