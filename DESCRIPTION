@@ -2,16 +2,14 @@ Package: centralDogma
 Title: An Amazing Shiny App
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
+    person("firstname", "lastname", , "your@email.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 License: What license is it under?
 Imports: 
     config (>= 0.3.1),
     golem (>= 0.3.2),
+    magrittr,
     shiny (>= 1.7.1)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
