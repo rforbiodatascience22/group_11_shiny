@@ -15,8 +15,7 @@ app_ui <- function(request) {
         tabPanel(title = "panel1",
                  "module1"),
         tabPanel(title = "Plot",
-                 mod_freqPlot_ui("freqPlot_1")),
-      )
+                 mod_freqPlot_ui("freqPlot_1")))
     )
   )
 }
