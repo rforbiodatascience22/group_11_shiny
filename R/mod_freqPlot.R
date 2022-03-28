@@ -34,6 +34,7 @@ mod_freqPlot_server <- function(id){
         NULL
       } else{
         input$peptide %>%
+          stringr::str_replace_all("\\*", "") %>%
           CentralDogma::plotFrequencies() +
           ggplot2::theme(legend.position = "none")
       }
