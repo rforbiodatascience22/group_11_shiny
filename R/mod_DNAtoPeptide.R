@@ -51,6 +51,20 @@ mod_DNAtoPeptide_server <- function(id){
         CentralDogma::randomDNASequence(input$dna_length)
       )
     })
+    output$peptide = renderText({
+      if(is.null(input$DNA)){
+        NULL
+      } else if(input$DNA %>% nchar() < 3){
+        NULL
+      } else{
+        input$DNA %>%
+          toupper() %>%
+          CentralDogma::DnaToRna() %>%
+          CentralDogma::getCodons() %>%
+          CentralDogma::translateRNASequence()
+      }
+
+    })
   })
 }
 
