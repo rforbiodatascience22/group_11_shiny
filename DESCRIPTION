@@ -12,7 +12,8 @@ Imports:
     ggplot2,
     golem (>= 0.3.2),
     magrittr,
-    shiny (>= 1.7.1)
+    shiny (>= 1.7.1),
+    stringr
 Author@R: c(person(given = "Álvaro", family = "León", role = c("aut",
     "cre"), # There must be a "cre", but there can only be one email =
     "alvaroguleon@gmail.com"), person(given = "Jonas", family =
